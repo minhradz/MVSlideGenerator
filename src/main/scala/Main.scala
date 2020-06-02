@@ -24,11 +24,9 @@ import ui.error.ErrorController
 object Main extends App with LazyLogging {
   val oldErr = System.err
 
-  override def main(args: Array[String]): Unit = {
-    logger.info("Starting program.")
+  logger.info("Starting program.")
 
-    Application.launch(classOf[MVSlideGenerator], args: _*)
-  }
+  Application.launch(classOf[MVSlideGenerator], args: _*)
 
   class MVSlideGenerator extends Application with LazyLogging {
     val versionNumber = "1.0.0"
