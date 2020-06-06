@@ -3,3 +3,6 @@ output_files/
 project/
 target/
 .idea/
+.bloop/
+.metals/
+src/main/scala/.metals/
